@@ -1,0 +1,1 @@
+Agrega aquí tus imágenes: banner.jpg y profile.jpg

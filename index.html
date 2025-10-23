@@ -1,62 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Angel Pablo | Data Architect & AI Specialist</title>
+  <title>Angel Pablo | Project Manager & Data Architect</title>
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3097/3097035.png">
+  <script defer src="main.js"></script>
 </head>
 <body>
-
-  <!-- Banner Section -->
-  <div class="banner">
-    <!-- Puedes subir tu imagen a /assets/banner.jpg -->
-    <img src="assets/banner.jpg" alt="Banner" class="banner-img">
-  </div>
-
-  <!-- Profile Section -->
-  <div class="profile">
-    <!-- Puedes subir tu foto a /assets/profile.jpg -->
-    <img src="assets/profile.jpg" alt="Profile" class="profile-pic">
-    <h1>Angel Pablo</h1>
-    <h2>Project Manager | Arquitecto de Datos | AI | Analytics</h2>
-    <p class="description">
-      Passionate about technology and solving complex challenges, specialized in the design of modern architectures, development of Data Lakehouse, Data Lakes, Data Mesh, and microservices-based solutions for managing and analyzing large volumes of data.
-    </p>
-
-    <!-- Social Icons -->
-    <div class="social-icons">
-      <a href="https://www.linkedin.com/in/angelpablo" target="_blank" title="LinkedIn">
-        <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/angelpabloj/" target="_blank" title="GitHub">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
-      </a>
-      <a href="https://www.cloudskillsboost.google/public_profiles/b405f6a6-8798-4743-8a85-5dfa97d09827" target="_blank" title="Google Skill Boost">
-        <img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google">
-      </a>
-      <a href="https://www.credly.com/users/angelpablo" target="_blank" title="Credly">
-        <img src="https://cdn-icons-png.flaticon.com/512/3128/3128337.png" alt="Credly">
-      </a>
-      <a href="https://xpro.mit.edu/certificate/90a5828d-a544-40b3-aeae-a200cbd4479a/" target="_blank" title="MIT Data Science">
-        <img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" alt="MIT">
-      </a>
+  <header class="fade-in">
+    <div class="lang-selector">
+      <img src="https://flagcdn.com/w20/es.png" alt="Español" id="es-flag" class="flag active">
+      <img src="https://flagcdn.com/w20/gb.png" alt="English" id="en-flag" class="flag">
     </div>
+  </header>
 
-    <!-- Buttons Section -->
-    <div class="links">
-      <a href="https://www.linkedin.com/in/angelpablo" target="_blank" class="btn">LinkedIn Profile</a>
-      <a href="https://github.com/angelpabloj/" target="_blank" class="btn">GitHub Projects</a>
-      <a href="https://www.cloudskillsboost.google/public_profiles/b405f6a6-8798-4743-8a85-5dfa97d09827" target="_blank" class="btn">Google Skill Boost</a>
-      <a href="https://www.credly.com/users/angelpablo" target="_blank" class="btn">Credly Certifications</a>
-      <a href="https://xpro.mit.edu/certificate/90a5828d-a544-40b3-aeae-a200cbd4479a/" target="_blank" class="btn">MIT Data Science Certificate</a>
+  <section class="hero fade-in">
+    <img src="assets/banner.jpg" alt="Banner" class="banner">
+    <div class="profile">
+      <img src="assets/profile.jpg" alt="Foto de perfil" class="profile-pic">
+      <h1>Angel Pablo</h1>
+      <h2 data-es="Project Manager | Arquitecto de Datos | AI | Analytics"
+          data-en="Project Manager | Data Architect | AI | Analytics">
+          Project Manager | Arquitecto de Datos | AI | Analytics
+      </h2>
+      <p id="description"
+         data-es="Apasionado por la tecnología y la resolución de desafíos complejos, especializado en el diseño de arquitecturas modernas, desarrollo de Data Lakehouse, Data Lakes, Data Mesh y soluciones basadas en microservicios para la gestión y análisis de grandes volúmenes de datos."
+         data-en="Passionate about technology and solving complex challenges, specialized in the design of modern architectures, development of Data Lakehouse, Data Lakes, Data Mesh, and microservices-based solutions for managing and analyzing large volumes of data.">
+         Apasionado por la tecnología y la resolución de desafíos complejos, especializado en el diseño de arquitecturas modernas, desarrollo de Data Lakehouse, Data Lakes, Data Mesh y soluciones basadas en microservicios para la gestión y análisis de grandes volúmenes de datos.
+      </p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/angelpablo" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn"></a>
+        <a href="https://github.com/angelpabloj" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"></a>
+        <a href="https://www.cloudskillsboost.google/public_profiles/b405f6a6-8798-4743-8a85-5dfa97d09827" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/300/300221.png" alt="Google"></a>
+        <a href="https://www.credly.com/users/angelpablo" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/3128/3128337.png" alt="Credly"></a>
+        <a href="https://xpro.mit.edu/certificate/90a5828d-a544-40b3-aeae-a200cbd4479a/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/906/906175.png" alt="MIT"></a>
+      </div>
     </div>
-  </div>
+  </section>
 
-  <footer>
-    <p>© 2025 Angel Pablo — All rights reserved.</p>
+  <footer class="fade-in">
+    <p>© 2025 Angel Pablo — Todos los derechos reservados.</p>
   </footer>
-
 </body>
 </html>

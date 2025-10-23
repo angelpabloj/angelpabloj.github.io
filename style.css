@@ -1,114 +1,109 @@
-/* ====== GLOBAL ====== */
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom, #0b1523, #152c46);
-  color: #ffffff;
+  color: #fff;
   text-align: center;
+  overflow-x: hidden;
 }
 
-/* ====== BANNER ====== */
-.banner {
+header {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.lang-selector .flag {
+  width: 25px;
+  margin-left: 10px;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.lang-selector .flag.active,
+.lang-selector .flag:hover {
+  opacity: 1;
+}
+
+.hero {
   position: relative;
-  width: 100%;
-  height: 240px;
-  background: #1e293b;
-  overflow: hidden;
 }
 
-.banner-img {
+.banner {
   width: 100%;
-  height: 100%;
+  height: 250px;
   object-fit: cover;
-  opacity: 0.85;
+  opacity: 0.9;
 }
 
-/* ====== PROFILE ====== */
 .profile {
-  margin-top: -70px;
-  padding: 20px;
+  position: relative;
+  margin-top: -80px;
 }
 
 .profile-pic {
   width: 130px;
   height: 130px;
   border-radius: 50%;
-  border: 4px solid #ffffff;
+  border: 4px solid #fff;
   background-color: #1e293b;
   object-fit: cover;
 }
 
-.profile h1 {
+h1 {
   font-size: 1.8rem;
   margin: 15px 0 5px;
 }
 
-.profile h2 {
+h2 {
   font-size: 1.1rem;
   color: #9ca3af;
   margin-bottom: 15px;
 }
 
-.description {
+p {
   max-width: 700px;
   margin: 0 auto 30px;
-  font-size: 1rem;
   color: #cbd5e1;
-  line-height: 1.5;
+  line-height: 1.6;
+  padding: 0 10px;
 }
 
-/* ====== SOCIAL ICONS ====== */
-.social-icons {
+.social {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 30px;
+  gap: 20px;
+  margin-bottom: 40px;
 }
 
-.social-icons img {
-  width: 32px;
-  height: 32px;
-  transition: transform 0.2s;
+.social img {
+  width: 30px;
   filter: brightness(0) invert(1);
+  transition: transform 0.3s, filter 0.3s;
 }
 
-.social-icons img:hover {
-  transform: scale(1.15);
+.social img:hover {
+  transform: scale(1.1);
   filter: brightness(0) invert(0.7) sepia(1) saturate(3) hue-rotate(190deg);
 }
 
-/* ====== BUTTONS ====== */
-.links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin-bottom: 60px;
-}
-
-.btn {
-  background: #0d1117;
-  border: 2px solid #ffffff;
-  border-radius: 14px;
-  padding: 14px 28px;
-  color: #ffffff;
-  font-weight: 600;
-  text-decoration: none;
-  width: 85%;
-  max-width: 400px;
-  transition: all 0.3s ease;
-}
-
-.btn:hover {
-  background: #1e40af;
-  border-color: #1e40af;
-  transform: scale(1.03);
-}
-
-/* ====== FOOTER ====== */
 footer {
-  background: transparent;
+  padding: 30px;
   color: #9ca3af;
-  padding: 20px;
   font-size: 0.9rem;
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
