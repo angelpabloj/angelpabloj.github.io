@@ -64,9 +64,7 @@ p {
 .links {
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
-  align-items: flex-start;
-
+  align-items: center;
   gap: 15px;
   margin-bottom: 60px;
 }
@@ -74,7 +72,7 @@ p {
 .link-btn {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center;*/
   gap: 12px;
   width: 85%;
   max-width: 380px;
@@ -85,10 +83,14 @@ p {
   text-decoration: none;
   transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0.05);
+
+  justify-content: flex-start;
 }
 
 .link-btn img {
   width: 22px;
+  margin-right: 15px;
+  vertical-align: middle;
   filter: brightness(0) invert(1);
 }
 
